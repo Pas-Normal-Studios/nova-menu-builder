@@ -37,15 +37,6 @@
     >
       {{ __('novaMenuBuilder.addMenuItem') }}
     </button>
-    
-    <button
-      id="sync-menu"
-      title="Sync menu"
-      class="btn btn-default btn-icon bg-primary text-white flex-no-shrink"
-      @click.prevent="$emit('syncMenu')"
-    >
-        Sync menu 
-    </button>
 
     <copy-menu-items-modal
       :resourceId="resourceId"
