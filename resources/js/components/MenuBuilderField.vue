@@ -7,6 +7,7 @@
       :menuCount="field.menuCount"
       :showDuplicate="field.showDuplicate"
       @addMenuItem="openAddModal"
+      @syncMenu="syncMenu"
       @changeLocale="setSelectedLocale"
       @refreshItems="refreshData"
     />
@@ -129,6 +130,10 @@ export default {
     openAddModal() {
       this.update = false;
       this.showAddModal = true;
+    },
+    
+    syncMenu() {
+        aler('Sync menu');
     },
 
     closeModal() {
