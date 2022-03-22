@@ -9,7 +9,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
 use OptimistDigital\MenuBuilder\MenuBuilder;
 use OptimistDigital\MenuBuilder\Nova\Fields\MenuBuilderField;
-use OptimistDigital\MenuBuilder\Nova\Actions\SyncMenu;
+use App\Nova\Actions\SyncMenu;
 
 class MenuResource extends Resource
 {
