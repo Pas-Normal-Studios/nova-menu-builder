@@ -87,7 +87,7 @@ class MenuResource extends Resource
     public function actions(Request $request)
     {
         return [
-            (new SyncMenu)->withoutConfirmation(),
+            (new SyncMenu)->withoutConfirmation()->standalone(),
         ];
     }
 }
